@@ -36,7 +36,7 @@ const Team: React.FC = () => {
     return (
         <div className='bg-white'>
             <div className="px-[120px] py-[100px] flex flex-row">
-                <div className="w-1/2 flex flex-wrap mr-[32px] max-w-full">
+                <div className="md:w-3/5 flex flex-wrap mr-[32px] max-w-full">
                     {
                         memberImages.map((member, index) => {
                             return (
@@ -45,7 +45,7 @@ const Team: React.FC = () => {
                         })
                     }
                 </div>
-                <div className="w-1/2 flex flex-col text-left">
+                <div className="md:w-1/2 flex flex-col text-left">
                     <h1 className="text-[64px] font-medium mt-0 mb-7">Meet Our Team</h1>
                     <p className="text-24px text-[rgba(0,0,0,.6)] mt-0 mb-[160px] font-medium leading-8">Discover the brilliance behind Embrace. Our team blends innovation and artistry to craft digital wonders that captivate</p>
                     <div className="flex w-full justify-start">

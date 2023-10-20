@@ -39,14 +39,17 @@ const Footer = () => {
               </ButtonPrimary>
             </div>
           </div>
-          <div className="w-2/5 flex flex-wrap gap-x-12 justify-start">
-            {links.map((link, index) => {
-              return (
-                <div className="text-left w-1/4" key={index}>
-                  <span className="text-[16px] font-medium leading-5 ">{link}</span>
-                </div>
-              )
-            })}
+          <div className="w-1/2" >
+            <div className="flex w-full flex-wrap h-full justify-start" style={{ flex: '0 0 30%' }}>
+
+              {links.map((link, index) => {
+                return (
+                  <div className="text-left w-[32%]" key={index} >
+                    <a href="#" className="text-black text-[16px] font-medium leading-5 no-underline hover:text-[#3461ff] cursor-pointer">{link}</a>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
